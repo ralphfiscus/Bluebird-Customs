@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Sleek Theme Colors Mapped to existing classes */
+  --color-navy: var(--color-blue-950);
+  --color-navy-light: var(--color-blue-900);
+  --color-navy-lighter: var(--color-blue-800);
+  --color-aviation-blue: var(--color-blue-900);
+  --color-sky-blue: var(--color-sky-500);
+  --color-steel-gray: var(--color-slate-600);
+  --color-steel-light: var(--color-slate-50);
+  --color-gold: var(--color-sky-400);
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-slate-50 text-slate-900 antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans tracking-tight;
+  }
+}
